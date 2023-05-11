@@ -45,7 +45,6 @@ Constraints:
 // let nums = [7, 5, 6, 8, 3];
 let nums = [3, 3];
 let numslen = nums.length;
-
 let min = nums[0];
 let max = nums[0];
 
@@ -58,24 +57,18 @@ for (i = 0; i < numslen; i++) {
     }
 }
 
-console.log(`max = ${max} and min = ${min}`);
-
 let dividend = max; // 8
 let divisor = min; // 3
 let result;
 while (divisor != 0) {
     let temp = divisor;
-    console.log(`temp = ${temp}`);
     let rem = dividend % divisor;
-    console.log(`rem = ${rem}`);
     if (rem == 0) {
         result = divisor;
         break;
     }
     divisor = rem;
-    console.log(`divisor = ${divisor}`);
     dividend = temp;
-    console.log(`dividend = ${dividend}`);
 }
 
-console.log(`result = ${result}`);
+return result;
