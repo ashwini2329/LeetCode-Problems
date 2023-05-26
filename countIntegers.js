@@ -35,25 +35,19 @@ let count = 0;
 
 for (i = 2; i <= num; i++) {
     if (i < 10) {
-        console.log(`i = ${i}`);
         if (i % 2 == 0) {
-            console.log(`counted !`);
             count++;
         }
     } else {
         let len = i.toString().length;
-        console.log(`len at ${i} = ${len}`);
         let sum = 0;
         for (j = 0; j < len; j++) {
             let c = i.toString().charAt(j);
-            console.log(`c at ${j} = ${c}`);
             sum += parseInt(c);
         }
-        console.log(`sum = ${sum}`);
         if (sum % 2 == 0) {
             count++;
         }
     }
-    console.log("************************************");
 }
 console.log(`count = ${count}`);
