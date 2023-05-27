@@ -32,13 +32,11 @@ let num = 12345;
 let current = num;
 while (current > 9) {
     let len = current.toString().length;
-    console.log(`len = ${len}`);
     let sum = 0;
     for (i = 0; i < len; i++) {
         let c = current.toString().charAt(i);
         sum += parseInt(c);
     }
     current = sum;
-    console.log(`current = ${current}`);
 }
 console.log(current);
