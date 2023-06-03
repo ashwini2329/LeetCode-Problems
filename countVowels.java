@@ -34,7 +34,6 @@ s consists of lowercase English letters.
 1 <= k <= s.length
  */
 
-package leetcode.easy.problems;
 
 import java.util.HashSet;
 import java.util.Set;
