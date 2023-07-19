@@ -74,13 +74,6 @@ public class findWords {
     /**
      * The function checks if a given word can be formed using the characters and their counts provided
      * in a HashMap.
-     * 
-     * @param word The word that we want to check if it can be formed using the characters in the
-     * charsMap.
-     * @param charsMap The `charsMap` parameter is a HashMap that maps characters to their
-     * corresponding counts. It is used to check if the given word can be formed using the characters
-     * and their counts in the `charsMap`.
-     * @return The method isWordFormed is returning a boolean value.
      */
     public static boolean isWordFormed(String word, HashMap<String, Integer> charsMap) {
         int wordLength = word.length();
